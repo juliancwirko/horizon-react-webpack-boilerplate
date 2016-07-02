@@ -4,9 +4,10 @@ Demo app is included.
 
 ### What you get here:
 
-1. Horizon/RethinkDB app
-2. React/Webpack complete workflow
-3. Tests configuration
+1. [Horizon](http://horizon.io/) / [RethinkDB](https://www.rethinkdb.com/) app
+2. [React Horizon](https://medium.com/@roman01la/introducing-react-horizon-4c26f9ef628c)
+3. [React](https://facebook.github.io/react/) / [Webpack](https://webpack.github.io/) complete workflow
+4. Tests configuration
 
 ### How to start:
 
