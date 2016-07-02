@@ -1,6 +1,6 @@
 ## Horizon, React, Webpack boilerplate
 
-Demo TODO app is included.
+Demo app is included.
 
 ### What you get here:
 
