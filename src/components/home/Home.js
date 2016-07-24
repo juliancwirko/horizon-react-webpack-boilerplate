@@ -25,7 +25,13 @@ const Home = (props) => {
         />
       </div>
       <div>
-        {todos.map((t, i) => <Todo id={t.id} todo={t.todo} finished={t.finished} key={i} />)}
+        {todos.map((t, i) => <Todo
+          id={t.id}
+          todo={t.todo}
+          finished={t.finished}
+          timestamp={t.timestamp}
+          key={i}
+        />)}
       </div>
     </div>
   );

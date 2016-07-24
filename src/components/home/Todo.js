@@ -4,12 +4,12 @@ import style from './styles.styl';
 import { connect } from 'react-hz';
 
 const Todo = (props) => {
-  const { id, finished, todo, removeTodo, editTodo } = props;
+  const { id, finished, todo, removeTodo, editTodo, timestamp } = props;
   const handleRemove = () => {
     removeTodo(id);
   };
   const handleEdit = () => {
-    editTodo(id, todo, !finished);
+    editTodo(id, todo, !finished, timestamp);
   };
   const finishedClass = () => {
     if (finished) {
@@ -34,11 +34,17 @@ Todo.propTypes = {
   finished: React.PropTypes.bool,
   removeTodo: React.PropTypes.func.isRequired,
   editTodo: React.PropTypes.func.isRequired,
+  timestamp: React.PropTypes.string.isRequired,
 };
 
 export default connect(cssModules(Todo, style, { allowMultiple: true }), {
   mutations: {
     removeTodo: (hz) => (id) => hz('todos').remove(id),
-    editTodo: (hz) => (id, todo, finished) => hz('todos').replace({ id, todo, finished }),
+    editTodo: (hz) => (id, todo, finished, timestamp) => hz('todos').replace({
+      id,
+      todo,
+      finished,
+      timestamp,
+    }),
   },
 });
