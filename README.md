@@ -13,7 +13,7 @@ Demo app is included.
 
 1. You need Node 4.4 or higher
 2. Install RethinkDB here's how: [http://rethinkdb.com/docs/install/](http://rethinkdb.com/docs/install/)
-3. Install Horizon from Npm: `npm install -g horizon`
+3. Install Horizon from Npm: `npm install -g horizon@2.0.0-beta-5`(we use Horizon 2 here)
 4. Git clone this repo
 5. Go to the project folder: `cd horizon-react-webpack-boilerplate`
 6. Install all Npm dependencies: `npm install`
@@ -39,9 +39,9 @@ We use configuration with Mocha, Enzyme, JSDOM, Chai, Sinon etc. You can even te
 4. We use HMR
 5. There is React Router configuration here although we don't use it in this demo
 
-This boilerplate needs many improvements, but it is quite useful already.
+This boilerplate needs improvements, but it is quite useful already.
 If you have any ideas let me know. I plan to build an app based on it so it will be probably improved over time.
 
 There will be also a blog post about it soon. Stay tuned...
 
-ps. I've included `.hz/config.toml` here in the repo. In the real apps you don't want to do this ;) You need to keep your settings in secret.
+ps. I've included `.hz/secrets.toml` here in the repo. In the real apps you don't want to do this ;) You need to keep your settings in secret.
